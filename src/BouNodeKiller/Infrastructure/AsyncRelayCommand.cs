@@ -1,6 +1,6 @@
 using System.Windows.Input;
 
-namespace NodeJsKiller.Infrastructure;
+namespace BouNodeKiller.Infrastructure;
 
 public sealed class AsyncRelayCommand : ICommand
 {
@@ -40,4 +40,3 @@ public sealed class AsyncRelayCommand : ICommand
 
     public void RaiseCanExecuteChanged() => CanExecuteChanged?.Invoke(this, EventArgs.Empty);
 }
-

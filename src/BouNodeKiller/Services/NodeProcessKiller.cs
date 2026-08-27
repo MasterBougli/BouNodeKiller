@@ -1,7 +1,7 @@
 using System.Diagnostics;
-using NodeJsKiller.Models;
+using BouNodeKiller.Models;
 
-namespace NodeJsKiller.Services;
+namespace BouNodeKiller.Services;
 
 public sealed class NodeProcessKiller
 {
@@ -26,4 +26,3 @@ public sealed class NodeProcessKiller
         return killedCount;
     }
 }
-

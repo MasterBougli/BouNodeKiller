@@ -2,7 +2,7 @@
 using System.Data;
 using System.Windows;
 
-namespace NodeJsKiller;
+namespace BouNodeKiller;
 
 /// <summary>
 /// Interaction logic for App.xaml

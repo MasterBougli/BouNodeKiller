@@ -1,7 +1,7 @@
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
 
-namespace NodeJsKiller.Infrastructure;
+namespace BouNodeKiller.Infrastructure;
 
 public abstract class ObservableObject : INotifyPropertyChanged
 {
@@ -24,4 +24,3 @@ public abstract class ObservableObject : INotifyPropertyChanged
         PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
     }
 }
-

@@ -1,6 +1,6 @@
 using System.Text;
 
-namespace NodeJsKiller.Services;
+namespace BouNodeKiller.Services;
 
 public static class NodeCommandLineParser
 {
@@ -81,4 +81,3 @@ public static class NodeCommandLineParser
         return tokens;
     }
 }
-

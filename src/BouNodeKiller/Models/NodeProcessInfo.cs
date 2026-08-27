@@ -1,4 +1,4 @@
-namespace NodeJsKiller.Models;
+namespace BouNodeKiller.Models;
 
 public sealed class NodeProcessInfo
 {

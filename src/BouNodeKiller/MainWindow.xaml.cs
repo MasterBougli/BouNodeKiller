@@ -1,7 +1,7 @@
 using System.Windows;
-using NodeJsKiller.ViewModels;
+using BouNodeKiller.ViewModels;
 
-namespace NodeJsKiller;
+namespace BouNodeKiller;
 
 public partial class MainWindow : Window
 {

@@ -35,7 +35,7 @@ jobs:
 
       - name: Publish Windows build
         run: >
-          dotnet publish src/NodeJsKiller/NodeJsKiller.csproj
+          dotnet publish src/BouNodeKiller/BouNodeKiller.csproj
           -c Release
           -r win-x64
           --self-contained true

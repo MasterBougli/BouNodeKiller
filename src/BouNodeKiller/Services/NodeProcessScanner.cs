@@ -1,7 +1,7 @@
 using System.Management;
-using NodeJsKiller.Models;
+using BouNodeKiller.Models;
 
-namespace NodeJsKiller.Services;
+namespace BouNodeKiller.Services;
 
 public sealed class NodeProcessScanner
 {

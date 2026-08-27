@@ -3,11 +3,11 @@ using System.ComponentModel;
 using System.Reflection;
 using System.Windows.Data;
 using System.Windows.Input;
-using NodeJsKiller.Infrastructure;
-using NodeJsKiller.Models;
-using NodeJsKiller.Services;
+using BouNodeKiller.Infrastructure;
+using BouNodeKiller.Models;
+using BouNodeKiller.Services;
 
-namespace NodeJsKiller.ViewModels;
+namespace BouNodeKiller.ViewModels;
 
 public sealed class MainWindowViewModel : ObservableObject
 {
