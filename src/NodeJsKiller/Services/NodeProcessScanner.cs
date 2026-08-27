@@ -37,6 +37,7 @@ public sealed class NodeProcessScanner
         var parentProcessId = Convert.ToInt32(process["ParentProcessId"]);
         var startedAt = ParseCreationDate(process["CreationDate"]);
         var owner = GetOwner(process);
+        var workingDirectory = NodeProcessEnvironmentReader.ResolveWorkingDirectory(processId, commandLine);
 
         return new NodeProcessInfo
         {
@@ -45,6 +46,7 @@ public sealed class NodeProcessScanner
             ExecutablePath = executablePath,
             CommandLine = commandLine,
             ExecutionTarget = NodeCommandLineParser.GetExecutionTarget(commandLine),
+            WorkingDirectory = workingDirectory,
             Owner = owner,
             ParentProcessId = parentProcessId,
             StartedAt = startedAt

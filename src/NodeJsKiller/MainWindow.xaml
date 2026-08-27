@@ -57,6 +57,14 @@
                                HorizontalAlignment="Right"
                                Margin="0,6,0,0"
                                FontSize="12" />
+                    <Button Content="À propos"
+                            Click="About_Click"
+                            Margin="0,12,0,0"
+                            Padding="14,8"
+                            Background="#1F2937"
+                            Foreground="White"
+                            BorderBrush="#334155"
+                            BorderThickness="1" />
                 </StackPanel>
             </Grid>
         </Border>
@@ -165,7 +173,7 @@
                     <DataGridTextColumn Header="PID" Binding="{Binding ProcessId}" Width="90" />
                     <DataGridTextColumn Header="Nom" Binding="{Binding Name}" Width="120" />
                     <DataGridTextColumn Header="Script / cible" Binding="{Binding ExecutionTarget}" Width="220" />
-                    <DataGridTextColumn Header="Chemin Node" Binding="{Binding ShortExecutablePath}" Width="260" />
+                    <DataGridTextColumn Header="Répertoire lancement" Binding="{Binding ShortWorkingDirectory}" Width="260" />
                     <DataGridTextColumn Header="Utilisateur" Binding="{Binding Owner}" Width="160" />
                     <DataGridTextColumn Header="Démarré" Binding="{Binding StartedAtDisplay}" Width="170" />
                     <DataGridTextColumn Header="Parent PID" Binding="{Binding ParentProcessId}" Width="100" />

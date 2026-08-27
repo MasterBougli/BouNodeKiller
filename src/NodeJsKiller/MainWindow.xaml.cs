@@ -17,4 +17,14 @@ public partial class MainWindow : Window
     {
         await _viewModel.RefreshAsync();
     }
+
+    private void About_Click(object sender, RoutedEventArgs e)
+    {
+        var aboutWindow = new AboutWindow(_viewModel.AppVersion)
+        {
+            Owner = this
+        };
+
+        aboutWindow.ShowDialog();
+    }
 }

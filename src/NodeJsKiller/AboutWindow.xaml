@@ -1,0 +1,57 @@
+<Window x:Class="NodeJsKiller.AboutWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="À propos"
+        Width="520"
+        Height="320"
+        WindowStartupLocation="CenterOwner"
+        ResizeMode="NoResize"
+        Background="#0B1020"
+        FontFamily="Segoe UI">
+    <Grid Margin="20">
+        <Border CornerRadius="20"
+                Background="#111827"
+                BorderBrush="#243041"
+                BorderThickness="1"
+                Padding="22">
+            <StackPanel>
+                <TextBlock Text="BOU NodeJS Killer"
+                           Foreground="White"
+                           FontSize="24"
+                           FontWeight="SemiBold" />
+                <TextBlock Text="{Binding VersionLabel}"
+                           Foreground="#94A3B8"
+                           Margin="0,8,0,0"
+                           FontSize="13" />
+                <TextBlock Text="Application Windows pour repérer les processus Node, voir ce qu’ils lancent, puis les fermer proprement."
+                           Foreground="#CBD5E1"
+                           Margin="0,14,0,0"
+                           TextWrapping="Wrap" />
+
+                <TextBlock Margin="0,18,0,4" Foreground="#94A3B8" Text="Liens" />
+                <TextBlock>
+                    <Hyperlink NavigateUri="{Binding RepositoryUrl}" RequestNavigate="Hyperlink_RequestNavigate">
+                        Dépôt GitHub
+                    </Hyperlink>
+                </TextBlock>
+                <TextBlock Margin="0,4,0,0">
+                    <Hyperlink NavigateUri="{Binding ReleasesUrl}" RequestNavigate="Hyperlink_RequestNavigate">
+                        Releases GitHub
+                    </Hyperlink>
+                </TextBlock>
+
+                <Button Content="Fermer"
+                        HorizontalAlignment="Right"
+                        Margin="0,22,0,0"
+                        Padding="18,8"
+                        Click="Close_Click"
+                        Background="#2563EB"
+                        Foreground="White"
+                        BorderThickness="0" />
+            </StackPanel>
+        </Border>
+    </Grid>
+</Window>

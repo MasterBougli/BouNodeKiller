@@ -12,6 +12,8 @@ public sealed class NodeProcessInfo
 
     public string ExecutionTarget { get; init; } = string.Empty;
 
+    public string WorkingDirectory { get; init; } = string.Empty;
+
     public string Owner { get; init; } = string.Empty;
 
     public int ParentProcessId { get; init; }
@@ -23,4 +25,6 @@ public sealed class NodeProcessInfo
     public string ShortCommandLine => CommandLine.Length <= 140 ? CommandLine : CommandLine[..137] + "...";
 
     public string ShortExecutablePath => ExecutablePath.Length <= 120 ? ExecutablePath : ExecutablePath[..117] + "...";
+
+    public string ShortWorkingDirectory => WorkingDirectory.Length <= 120 ? WorkingDirectory : WorkingDirectory[..117] + "...";
 }
