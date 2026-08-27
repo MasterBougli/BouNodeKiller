@@ -22,7 +22,7 @@ jobs:
           dotnet-version: 9.0.x
 
       - name: Restore dependencies
-        run: dotnet restore BOU-NodeJSKiller.sln
+        run: dotnet restore BouNodeKiller.sln
 
       - name: Build solution
-        run: dotnet build BOU-NodeJSKiller.sln -c Release --no-restore
+        run: dotnet build BouNodeKiller.sln -c Release --no-restore

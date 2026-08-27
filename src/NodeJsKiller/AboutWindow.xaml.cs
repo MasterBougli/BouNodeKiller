@@ -31,8 +31,8 @@ internal sealed class AboutWindowViewModel
     public AboutWindowViewModel(string version)
     {
         VersionLabel = $"Version {version}";
-        RepositoryUrl = new Uri("https://github.com/MasterBougli/BOU-NodeJSKiller");
-        ReleasesUrl = new Uri("https://github.com/MasterBougli/BOU-NodeJSKiller/releases");
+        RepositoryUrl = new Uri("https://github.com/MasterBougli/BouNodeKiller");
+        ReleasesUrl = new Uri("https://github.com/MasterBougli/BouNodeKiller/releases");
     }
 
     public string VersionLabel { get; }

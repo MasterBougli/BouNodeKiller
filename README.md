@@ -1,25 +1,18 @@
-# BOU-NodeJSKiller
+# BouNodeKiller
 
-Application Windows pour repérer les processus Node.js, voir ce qu'ils exécutent, puis en fermer un, plusieurs, ou tous.
+BouNodeKiller is a Windows tool for finding Node.js processes, showing what they are running, and stopping one, many, or all of them.
 
-## Base retenue
+Choose your language:
 
-La première version part sur **WPF**, pour aller vite avec une interface native et un accès simple aux processus Windows.
+- [Français](README.fr.md)
+- [English](README.en.md)
+- [Español](README.es.md)
 
-## Ce que l'application fera
+Support the project:
 
-- lister les processus `node.exe` et `nodejs.exe`
-- afficher la ligne de commande complète
-- identifier le script ou la cible lancée
-- montrer l'utilisateur, le PID, le parent et l'heure de lancement
-- tuer un processus sélectionné
-- tuer tous les processus Node d'un coup
+- [Donate via Streamlabs](https://streamlabs.com/bouglitv)
 
-## Pistes alternatives
+Repository:
 
-1. WPF
-2. WinUI 3
-3. Electron
-
-La version courante part sur le choix 1 pour le démarrage.
+- [GitHub](https://github.com/MasterBougli/BouNodeKiller)
 

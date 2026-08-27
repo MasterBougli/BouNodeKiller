@@ -4,7 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d"
-        Title="À propos"
+        Title="À propos de BouNodeKiller"
         Width="520"
         Height="320"
         WindowStartupLocation="CenterOwner"
@@ -18,7 +18,7 @@
                 BorderThickness="1"
                 Padding="22">
             <StackPanel>
-                <TextBlock Text="BOU NodeJS Killer"
+                <TextBlock Text="BouNodeKiller"
                            Foreground="White"
                            FontSize="24"
                            FontWeight="SemiBold" />

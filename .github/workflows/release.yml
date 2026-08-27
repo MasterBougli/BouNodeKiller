@@ -31,7 +31,7 @@ jobs:
           "INSTALLER_OUTPUT_DIR=$env:GITHUB_WORKSPACE\artifacts\installer" | Out-File -FilePath $env:GITHUB_ENV -Encoding utf8 -Append
 
       - name: Restore dependencies
-        run: dotnet restore BOU-NodeJSKiller.sln
+        run: dotnet restore BouNodeKiller.sln
 
       - name: Publish Windows build
         run: >
@@ -47,7 +47,7 @@ jobs:
         shell: pwsh
         run: |
           New-Item -ItemType Directory -Force -Path artifacts/release | Out-Null
-          Compress-Archive -Path artifacts/publish/* -DestinationPath artifacts/release/BOU-NodeJSKiller-win-x64.zip -Force
+          Compress-Archive -Path artifacts/publish/* -DestinationPath artifacts/release/BouNodeKiller-win-x64.zip -Force
 
       - name: Install Inno Setup
         shell: pwsh
@@ -57,7 +57,7 @@ jobs:
         shell: pwsh
         run: |
           New-Item -ItemType Directory -Force -Path artifacts/installer | Out-Null
-          & "C:\Program Files (x86)\Inno Setup 6\ISCC.exe" /DAPP_VERSION=$env:APP_VERSION /DPUBLISH_DIR=$env:PUBLISH_DIR /DINSTALLER_OUTPUT_DIR=$env:INSTALLER_OUTPUT_DIR installer\NodeJsKiller.iss
+          & "C:\Program Files (x86)\Inno Setup 6\ISCC.exe" /DAPP_VERSION=$env:APP_VERSION /DPUBLISH_DIR=$env:PUBLISH_DIR /DINSTALLER_OUTPUT_DIR=$env:INSTALLER_OUTPUT_DIR installer\BouNodeKiller.iss
 
       - name: Publish GitHub release
         if: startsWith(github.ref, 'refs/tags/v')
@@ -67,6 +67,6 @@ jobs:
         with:
           tag_name: ${{ github.ref_name }}
           files: |
-            artifacts/release/BOU-NodeJSKiller-win-x64.zip
-            artifacts/installer/BOU-NodeJSKiller-Setup-x64.exe
+            artifacts/release/BouNodeKiller-win-x64.zip
+            artifacts/installer/BouNodeKiller-Setup-x64.exe
           generate_release_notes: true

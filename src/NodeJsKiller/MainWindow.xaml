@@ -4,7 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d"
-        Title="BOU NodeJS Killer"
+        Title="BouNodeKiller"
         Width="1280"
         Height="860"
         MinWidth="1100"
@@ -33,7 +33,7 @@
                 </Grid.ColumnDefinitions>
 
                 <StackPanel>
-                    <TextBlock Text="BOU NodeJS Killer"
+                    <TextBlock Text="BouNodeKiller"
                                Foreground="White"
                                FontSize="30"
                                FontWeight="SemiBold" />
