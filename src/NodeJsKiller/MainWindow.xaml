@@ -41,6 +41,10 @@
                                Foreground="#C7D2FE"
                                Margin="0,8,0,0"
                                FontSize="14" />
+                    <TextBlock Text="{Binding AppVersion, StringFormat=Version {0}}"
+                               Foreground="#94A3B8"
+                               Margin="0,6,0,0"
+                               FontSize="12" />
                 </StackPanel>
 
                 <StackPanel Grid.Column="1" HorizontalAlignment="Right" VerticalAlignment="Center">
@@ -161,6 +165,7 @@
                     <DataGridTextColumn Header="PID" Binding="{Binding ProcessId}" Width="90" />
                     <DataGridTextColumn Header="Nom" Binding="{Binding Name}" Width="120" />
                     <DataGridTextColumn Header="Script / cible" Binding="{Binding ExecutionTarget}" Width="220" />
+                    <DataGridTextColumn Header="Chemin Node" Binding="{Binding ShortExecutablePath}" Width="260" />
                     <DataGridTextColumn Header="Utilisateur" Binding="{Binding Owner}" Width="160" />
                     <DataGridTextColumn Header="Démarré" Binding="{Binding StartedAtDisplay}" Width="170" />
                     <DataGridTextColumn Header="Parent PID" Binding="{Binding ParentProcessId}" Width="100" />

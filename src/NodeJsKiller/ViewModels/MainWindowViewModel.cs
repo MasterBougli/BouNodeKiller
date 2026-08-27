@@ -1,5 +1,6 @@
 using System.Collections.ObjectModel;
 using System.ComponentModel;
+using System.Reflection;
 using System.Windows.Data;
 using System.Windows.Input;
 using NodeJsKiller.Infrastructure;
@@ -85,6 +86,11 @@ public sealed class MainWindowViewModel : ObservableObject
         get => _lastScanCount;
         private set => SetProperty(ref _lastScanCount, value);
     }
+
+    public string AppVersion
+        => Assembly.GetExecutingAssembly()
+            .GetCustomAttribute<AssemblyInformationalVersionAttribute>()?.InformationalVersion
+           ?? "1.0.0";
 
     private bool CanKillSelected() => !IsBusy && SelectedProcess is not null;
 

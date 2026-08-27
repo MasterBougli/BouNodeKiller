@@ -21,5 +21,6 @@ public sealed class NodeProcessInfo
     public string StartedAtDisplay => StartedAt?.ToString("yyyy-MM-dd HH:mm:ss") ?? "N/A";
 
     public string ShortCommandLine => CommandLine.Length <= 140 ? CommandLine : CommandLine[..137] + "...";
-}
 
+    public string ShortExecutablePath => ExecutablePath.Length <= 120 ? ExecutablePath : ExecutablePath[..117] + "...";
+}
