@@ -8,7 +8,7 @@ BouNodeKiller is a Windows utility for spotting Node.js processes, understanding
 - [English](README.en.md)
 - [Español](README.es.md)
 - [GitHub repository](https://github.com/MasterBougli/BouNodeKiller)
-- [Donate via Streamlabs](https://streamlabs.com/bouglitv)
+- **Soutenir Bougli** · [Faire un don PayPal via Streamlabs](https://streamlabs.com/bouglitv) · [Soutenir sur Patreon](https://www.patreon.com/cw/Bougli)
 
 ## What it does
 
